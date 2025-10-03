@@ -1,93 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rajat Kumar | Portfolio</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  </head>
-  <body class="bg-orange-50 text-gray-900 w-full max-w-4xl mx-auto px-5">
-    <!-- Header -->
-    <header class="mt-10 text-center">
-      <h1 class="text-4xl font-serif font-bold">Rajat Kumar</h1>
-      <p class="mt-3 text-lg">
-        Engineer | Math & ML Enthusiast | Backend Systems Developer
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajat Kumar | Portfolio</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-orange-50 text-gray-900 w-full max-w-4xl mx-auto px-5">
+
+<!-- Header -->
+<header class="mt-10 text-center">
+  <h1 class="text-4xl font-serif font-bold">Rajat Kumar</h1>
+  <p class="mt-3 text-lg">Engineer | Math Enthusiast | Backend & Data Systems Engineer</p>
+  <p class="mt-1 text-sm text-gray-600">IIT Roorkee Alumni • 9+ years experience</p>
+
+  <div class="flex justify-center gap-6 mt-5">
+    <a href="mailto:rajatkmr0505@gmail.com" class="font-semibold hover:text-red-600">Gmail</a>
+    <a href="https://www.linkedin.com/in/rajat-iitr/" target="_blank" class="font-semibold hover:text-blue-600">LinkedIn</a>
+    <a href="./resume.pdf" target="_blank" class="font-semibold hover:text-green-700">Resume</a>
+    <a href="https://rajat-iitroorkee.github.io/" target="_blank" class="font-semibold hover:text-gray-900">GitHub</a>
+  </div>
+</header>
+
+<hr class="my-8" />
+
+<!-- About -->
+<section>
+  <h2 class="text-2xl font-bold mb-4">About Me</h2>
+  <p class="text-gray-700 leading-relaxed">
+    I am a Computer Scientist with strong expertise in <span class="font-semibold">Java, Spring Boot, Microservices, System Design, and Data Engineering</span>.
+    I enjoy solving complex backend problems, optimizing performance, and working on large-scale distributed systems.
+  </p>
+</section>
+
+<hr class="my-8" />
+
+<!-- Skills -->
+<section>
+  <h2 class="text-2xl font-bold mb-4">Skills</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">Java</span>
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">Spring Boot</span>
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">MySQL</span>
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">Snowflake</span>
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">Kafka</span>
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">Redis</span>
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">System Design</span>
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">Micro services</span>
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">Data Pipelines</span>
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">OAuth 2.0</span>
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">Aerospike</span>
+    <span class="bg-white shadow-md rounded-lg px-4 py-2">ELK Stack</span>
+  </div>
+</section>
+
+<hr class="my-8" />
+
+<!-- Experience -->
+<section>
+  <h2 class="text-2xl font-bold mb-4">Experience</h2>
+  <div class="space-y-6">
+    <div>
+      <h3 class="font-semibold text-lg">Computer Scientist-2 (SDE-4)</h3>
+      <p class="text-sm text-gray-600">Adobe • Dec 2022 – Present</p>
+      <p class="mt-2 text-gray-700">
+        Designing scalable ingestion pipelines, handling millions of records with Snowflake, Kafka, and Spring Boot.
+        Leading efforts in job orchestration, monitoring, and feedback systems.
       </p>
-      <div class="flex justify-center gap-6 mt-5">
-        <a
-          href="https://www.linkedin.com/in/rajat-iitr/"
-          target="_blank"
-          class="font-semibold hover:text-blue-600"
-          >LinkedIn</a
-        >
-        <a
-          href="mailto:rajat@gmail.com"
-          class="font-semibold hover:text-red-600"
-          >Gmail</a
-        >
-        <a
-          href="./resume.pdf"
-          target="_blank"
-          class="font-semibold hover:text-green-700"
-          >Resume</a
-        >
-      </div>
-    </header>
+    </div>
 
-    <hr class="my-8" />
-
-    <!-- Skills Section -->
-    <section>
-      <h2 class="text-2xl font-bold mb-4">Skills</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <span class="bg-white shadow-md rounded-lg px-4 py-2">Java</span>
-        <span class="bg-white shadow-md rounded-lg px-4 py-2">Spring Boot</span>
-        <span class="bg-white shadow-md rounded-lg px-4 py-2">MySQL</span>
-        <span class="bg-white shadow-md rounded-lg px-4 py-2">Snowflake</span>
-        <span class="bg-white shadow-md rounded-lg px-4 py-2">Machine Learning</span>
-        <span class="bg-white shadow-md rounded-lg px-4 py-2">System Design</span>
-      </div>
-    </section>
-
-    <hr class="my-8" />
-
-    <!-- Projects Section -->
-    <section>
-      <h2 class="text-2xl font-bold mb-4">Projects</h2>
-      <div class="space-y-4">
-        <div class="bg-white shadow-md rounded-lg p-4">
-          <h3 class="font-semibold text-lg">Ingestion Job Management System</h3>
-          <p class="text-sm mt-2 text-gray-700">
-            Built a robust system to handle ingestion jobs with monitoring,
-            retry logic, and feedback publishing using Spring Boot, Kafka, and
-            MySQL.
-          </p>
-        </div>
-        <div class="bg-white shadow-md rounded-lg p-4">
-          <h3 class="font-semibold text-lg">Dynamic Schema Navigation Service</h3>
-          <p class="text-sm mt-2 text-gray-700">
-            Designed a Spring Boot service to process schema-based navigation
-            requests internally with Snowflake integration.
-          </p>
-        </div>
-        <div class="bg-white shadow-md rounded-lg p-4">
-          <h3 class="font-semibold text-lg">Research Notes Blog</h3>
-          <p class="text-sm mt-2 text-gray-700">
-            Personal blog platform to publish notes on math, physics, and
-            machine learning, styled with Tailwind and MathJax for LaTeX
-            rendering.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <hr class="my-8" />
-
-    <!-- Footer -->
-    <footer class="text-center mb-10">
-      <p class="text-sm text-gray-600">
-        © 2025 Rajat Kumar. Built with ❤️.
+    <div>
+      <h3 class="font-semibold text-lg">Senior Software Engineer Gaana (Dec 2018 – Dec 2022)</h3>
+      <p class="mt-2 text-gray-700">
+        Owned and build various products like Videos,Podcast, Live streaming, etc. from scratch.
+        Designed paid-subscriber content streaming from scratch.
+        Revised and updated old code bases to modern development standards, reducing operating costs and improving functionality.
       </p>
-    </footer>
-  </body>
+    </div>
+    <div>
+      <h3 class="font-semibold text-lg">Software Engineer Paytm (July 2016 – Dec 2018)</h3>
+      <p class="mt-2 text-gray-700">
+        Worked as Software Development Engineer in OAuth Team of "Paytm".
+        Used OAuth 2.0 protocol for authentication.
+        Worked on several third-party payment integrations.
+        Feature design, development, unit testing, and code reviews for OAuth module.
+        Working technology stack includes Java, Spring Framework, Hibernate, JPA, Apache Kafka, MySQL, Redis, RabbitMQ, and Web Services.
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr class="my-8" />
+
+<hr class="my-8" />
+
+<!-- Footer -->
+<footer class="text-center mb-10">
+  <p class="text-sm text-gray-600">© 2025 Rajat Kumar — Crafted with passion & curiosity.</p>
+</footer>
+</body>
 </html>
